@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booked</title>
+</head>
+<body>
+
+    <h2>🎫 Ticket Booked Successfully!</h2>
+
+    <p><strong>Ticket Number:</strong> {{ ticket }}</p>
+
+    <h3>QR Code</h3>
+
+    <img src="{{ url_for('static', filename=qr_image) }}" width="250">
+
+    <br><br>
+
+    <a href="/mytickets">My Tickets</a>
+    <br><br>
+    <a href="/dashboard">Dashboard</a>
+
+</body>
+</html>

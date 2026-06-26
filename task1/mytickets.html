@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Tickets</title>
+</head>
+<body>
+
+<h2>My Tickets</h2>
+
+<table border="1">
+<tr>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Date</th>
+    <th>Fare</th>
+    <th>Ticket No</th>
+</tr>
+
+{% for t in tickets %}
+<tr>
+    <td>{{ t[0] }}</td>
+    <td>{{ t[1] }}</td>
+    <td>{{ t[2] }}</td>
+    <td>₹{{ t[3] }}</td>
+    <td>{{ t[4] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

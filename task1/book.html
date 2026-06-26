@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>Book Ticket</title>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Book Ticket</h2>
+<form method="POST">
+<input name="source" placeholder="Source">
+<input name="destination" placeholder="Destination">
+<input type="date" name="date">
+<button type="submit">Book Ticket</button>
+</form>
+</div>
+
+</body>
+</html>
